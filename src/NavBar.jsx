@@ -9,7 +9,7 @@ export function NavBar() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/blog">Blog</Link>
+          <Link to="/quiz">Quiz</Link>
         </li>
         <li>
           <Link to="/projects">Projects</Link>
