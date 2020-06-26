@@ -4,17 +4,15 @@ import { Link } from "@reach/router";
 export function NavBar() {
   return (
     <div>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/quiz">Quiz</Link>
-        </li>
-        <li>
-          <Link to="/projects">Projects</Link>
-        </li>
-      </ul>
+      <p>
+        <Link to="/">Home</Link>
+      </p>
+      <p>
+        <Link to="/poll">Poll</Link>
+      </p>
+      <p>
+        <Link to="/projects">Projects</Link>
+      </p>
     </div>
   );
 }
