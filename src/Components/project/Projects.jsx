@@ -1,5 +1,5 @@
 import React from "react";
-import { Cards } from "./cards/CardsContainer";
+import { Cards } from "../project/CardsContainer";
 export class Projects extends React.Component {
   state = {
     repo_arr: [],

@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import { Route } from "./Route.jsx";
+import { Route } from "./Components/home/Route.jsx";
 
 import * as serviceWorker from "./serviceWorker";
 
