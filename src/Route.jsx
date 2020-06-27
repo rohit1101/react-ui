@@ -1,7 +1,7 @@
 import React from "react";
 import { Router } from "@reach/router";
 import App from "./App";
-import { Poll } from "./Poll";
+import { Quiz } from "./Poll";
 import { Projects } from "./Projects";
 import { NavBar } from "./NavBar";
 
@@ -11,7 +11,7 @@ export function Route() {
       <NavBar />
       <Router>
         <App path="/" />
-        <Poll path="/poll" />
+        <Quiz path="/quiz" />
         <Projects path="/projects" />
       </Router>
     </>

@@ -8,7 +8,7 @@ export function NavBar() {
         <Link to="/">Home</Link>
       </p>
       <p>
-        <Link to="/poll">Poll</Link>
+        <Link to="/quiz">Quiz</Link>
       </p>
       <p>
         <Link to="/projects">Projects</Link>

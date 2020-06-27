@@ -1,5 +1,5 @@
 import React from "react";
 
-export function Poll() {
-  return <h1>Poll</h1>;
+export function Quiz() {
+  return <h1>Quiz</h1>;
 }
