@@ -1,7 +1,7 @@
 import React from "react";
 import { Router } from "@reach/router";
 import App from "./App";
-import { Quiz } from "./Poll";
+import { Quiz } from "./Quiz";
 import { Projects } from "./Projects";
 import { NavBar } from "./NavBar";
 
