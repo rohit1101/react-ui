@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap");
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+}
+
+.cards {
+  height: 18rem;
+  padding: 2rem 1rem;
+  margin: 2rem 2rem;
+  background-color: aquamarine;
+  box-shadow: -1px 1px 20px -10px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.cards:hover {
+  animation-name: shake;
+  animation-duration: 0.5s;
+  animation-timing-function: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  50% {
+    transform: rotate(-0.5deg);
+  }
+  100% {
+    transform: rotate(0.5deg);
+  }
+}
+
+.name {
+  font-weight: 800;
+  font-size: 2.3rem;
+  border-bottom: 1px solid black;
+}
+
+.des {
+  /* padding: 1rem 0; */
+  margin: 1.5rem 0;
+  font-size: 1.8rem;
+  font-weight: 100;
+}
+
+.link {
+  font-size: 1.5rem;
+}
+
+h1 {
+  text-align: center;
+  margin: 3rem 0;
+  font-size: 3rem;
+  font-weight: 900;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import { Cards } from "../project/CardsContainer";
+import styles from "./Cards.module.css";
 export class Projects extends React.Component {
   state = {
     repo_arr: [],
@@ -15,8 +16,11 @@ export class Projects extends React.Component {
 
   render() {
     return (
-      <div className="card-container">
-        <Cards info={this.state.repo_arr} />
+      <div>
+        <h1>GitHub Streak </h1>
+        <div className={styles["card-container"]}>
+          <Cards info={this.state.repo_arr} />
+        </div>
       </div>
     );
   }

@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "@reach/router";
-import "./Nav.css";
+import styles from "./Nav.module.css";
 
 export function NavBar() {
   return (
-    <div className="nav">
+    <div className={styles.nav}>
       <p>
         <Link to="/">Home</Link>
       </p>
