@@ -1,6 +1,14 @@
 import React from "react";
-import { List } from "./List";
 
 export function Options({ item }) {
-  return <List el={item} />;
+  // return <li>{item}</li>;
+  return item.map((item) => {
+    return (
+      <div>
+        <p>
+          <input type="checkbox" /> {item}
+        </p>
+      </div>
+    );
+  });
 }

@@ -26,9 +26,8 @@ export class Quiz extends React.Component {
           return (
             <div>
               <h3>{item.question}</h3>
-              <ol>
-                <Options item={item.options} />
-              </ol>
+
+              <Options item={item.options} />
             </div>
           );
         })}
