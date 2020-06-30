@@ -1,5 +1,6 @@
 import React from "react";
+import { List } from "./List";
 
 export function Options({ item }) {
-  return <li>{item}</li>;
+  return <List el={item} />;
 }
