@@ -20,17 +20,24 @@ export class Quiz extends React.Component {
   render() {
     const arr = [...this.state.quiz_arr];
     return (
-      <div className={styles.t}>
+      <div className={styles["quiz-container"]}>
         <h1>Quiz</h1>
-        {arr.map((item) => {
-          return (
-            <div>
-              <h3>{item.question}</h3>
+        <div>
+          {arr.map((item) => {
+            return (
+              <div>
+                <h3>
+                  <span role="img" aria-label="some">
+                    👉
+                  </span>{" "}
+                  {item.question}
+                </h3>
 
-              <Options item={item.options} />
-            </div>
-          );
-        })}
+                <Options item={item.options} />
+              </div>
+            );
+          })}
+        </div>
       </div>
     );
   }
