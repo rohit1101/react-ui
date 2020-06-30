@@ -13,8 +13,9 @@ export class Projects extends React.Component {
     const res = await fetch(endpoint);
     const data = await res.json();
     if (data.length) {
-      return this.setState({ repo_arr: data });
-    } else {
+      this.setState({ repo_arr: data });
+    }
+    if (this.state.loading) {
       return <Loading />;
     }
   }
