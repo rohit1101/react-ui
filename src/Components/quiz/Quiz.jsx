@@ -87,7 +87,7 @@ export class Quiz extends React.Component {
                   {item.question}
                 </h3>
 
-                <Options item={item.options} event={this.handleClick} />
+                <Options item={item} event={this.handleClick} />
               </div>
             );
           })}

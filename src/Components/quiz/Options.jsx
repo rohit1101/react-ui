@@ -3,7 +3,7 @@ import styles from "./Quiz.module.css";
 export function Options({ item, event }) {
   let i = 0;
   // return <li>{item}</li>;
-  return item.map((item) => {
+  return item.options.map((item) => {
     return (
       <p key={i++} className={styles.options}>
         <label onClick={event}>
