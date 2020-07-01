@@ -48,6 +48,15 @@ export class Quiz extends React.Component {
     ],
   };
 
+  handleClick = (e) => {
+    const ans_arr = [...this.state.quiz_arr];
+    console.log(e.target.name);
+    // let i = ans_arr.find((item) => {
+    //   return item.answer === e.target.textContent;
+    // });
+    // console.log(i);
+  };
+
   render() {
     const arr = [...this.state.quiz_arr];
     let i = 0;
@@ -65,7 +74,7 @@ export class Quiz extends React.Component {
                   {item.question}
                 </h3>
 
-                <Options item={item.options} />
+                <Options item={item.options} event={this.handleClick} />
               </div>
             );
           })}
