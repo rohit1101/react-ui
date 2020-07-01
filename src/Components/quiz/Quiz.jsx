@@ -50,12 +50,24 @@ export class Quiz extends React.Component {
 
   handleClick = (e) => {
     const ans_arr = [...this.state.quiz_arr];
-    console.log(e.target.name);
-    // let a = [];
-    let a = ans_arr.find((item) => {
-      return item.answer === e.target.name;
+    console.log(e);
+    // let a = ans_arr.find((item) => {
+    //   return item.answer === e.target.name;
+    // });
+    // console.log(a);
+
+    let newArr = ans_arr.map((item) => {
+      return item.answer === e.target.name
+        ? {
+            question: item.question,
+            options: item.options,
+            answer: item.answer,
+            selected: true,
+          }
+        : item;
     });
-    console.log(a);
+    console.log(newArr);
+    this.setState({ quiz_arr: newArr });
   };
 
   render() {
